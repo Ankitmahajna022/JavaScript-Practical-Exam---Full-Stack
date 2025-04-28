@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="container">
+    <h1>Product Management</h1>
+
+
+    <form id="product-form">
+        <input type="text" id="title" placeholder="Enter Product Title">
+        <input type="number" id="price" placeholder="Enter Product Price">
+        <input type="text" id="image" placeholder="Enter Image URL">
+        <input type="text" id="category" placeholder="Enter Category">
+        <button type="submit">Add Product</button>
+    </form>
+
+    <div class="controls">
+        <input type="text" id="search" placeholder="Search by Title">
+        <select id="sort">
+            <option value="">Sort By Price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+        <input type="text" id="filter" placeholder="Filter by Category" />
+    </div>
+
+
+    <div id="product-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
